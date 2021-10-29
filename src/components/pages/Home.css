@@ -1,0 +1,58 @@
+.client-section {
+    align-items: center;
+    
+}
+
+.client-section > h2 {
+    margin: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+ span {
+    color: #6c89af;
+    font-weight: 600;
+}
+
+.client-section .client-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.client-section .client-container .client-box {
+    margin: 1rem;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+.client-section .client-container .client-box > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.client-section .client-container .client-box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .client-section{
+        width: 100%;
+    }
+    .section {
+        padding: 0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 3rem;
+    }
+}

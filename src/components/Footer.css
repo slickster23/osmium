@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 2rem;
+    height: 10vh;
+    position: relative;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text > p {
+    color:#fff;
+}
