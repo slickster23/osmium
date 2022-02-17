@@ -6,20 +6,26 @@ function About() {
     return (
         <>
 
-        <div className="body ">
+        <div className="body " style={{ overflowX: 'hidden' }}>
+
+        <div className="page-hero">
+                <h2>About Us</h2>
+            </div>
+            
 
         <div className="about-content">
-            <h2>About Us</h2>
             <div className="container">
                 <div className="box">
-                    <h3>“Content KING, Content Marketing Is Queen”</h3>
+                    <h3>“Content is King, Content Marketing is Queen”</h3>
                 <p>We understand you want a brand that will generate leads, connect more with consumers and build a lasting impression that cements trust, authority and reassurance. The Power of Content Marketing to do that for you is a mission, we are here to make it possible.</p>
                 <p>Osmium Lesotho is a trusted content marketing Agency making sure your brand stays ahead with user centric Digital Content Marketing Strategy solutions including Social Media Marketing, Brand Strategy, Website and App Development and Brand Development. </p>
                 <p>With more than six (6) years doing digital Marketing in Lesotho, our trusted team has developed the experience, credibility and skills to make sure your brand generates conversion, leads and awareness. </p>
                 </div>
 
                 <div className="box">
-                    <img src="/gallery/about.jpg" alt="" />
+                    <video width="600" height="300"controls>
+                        <source src="/gallery/lele.mp4" type="video/mp4"></source>
+                    </video>
                 </div>
             </div>
 

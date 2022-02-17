@@ -3,22 +3,16 @@
 h2 {
     margin-top: 3rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: #6c89af;
-    font-weight: 300;
+    font-weight:700;
 }
 
 
-
-.about-content h2 {
-
-   
-}
 
 .about-content .container {
-    padding: 0 9%;
-    padding-bottom: 1rem;
+    padding: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,12 +27,13 @@ h2 {
 .about-content .container .box h3 {
     letter-spacing: 0.05rem;
     color: #6c89af;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
-.about-content .container .box img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50px;
+.about-content .container .box video {
+    width: 600px !important;
+    height: 200% !important;
 }
 
 .about-content .container .box > i {
@@ -47,37 +42,42 @@ h2 {
 
 .about-content .container .box > p{
     margin-top: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.32rem;
     font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-
+    text-align: left;
     padding: 0.4rem;
 }
 
 .about-content .team-section {
-    padding: 0 9%;
-    margin-top: 1rem;
+    background-color: rgb(27, 27, 27);
+    margin-top: -1.5rem;
+    background:url('../images/background.jpg');
     text-align: center;
     align-items: center;
+    height: 100%;
 }
 
-.about-content .team-section > h2 {
-    margin-top: 1.5rem;
+.about-content .team-section  h2 {
+    margin-top: 4rem;
+    padding-top: 2rem;
     font-size: 2.5rem;
     font-weight: 300;
+    
 }
 
 .about-content .team-section > p {
     font-weight: 300;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     letter-spacing: 0.05rem;
+    color: white;
 }
 
 .about-content .team-section .team-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vh;
    
 }
 
@@ -85,8 +85,6 @@ h2 {
     height: 300px;
     width: 300px;
     padding: 0.2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
     align-items: center;
 }
 
@@ -105,9 +103,10 @@ h2 {
 
 .about-content .team-section .team-container .team-box > p {
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 0.1rem;
     margin-bottom:0.3rem ;
+    color: white;
 }
 
 .about-content .team-section .team-container .team-box .socials {
@@ -122,7 +121,7 @@ h2 {
 .about-content .team-section .team-container .team-box .socials > a
  {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .about-content .team-section .team-container .team-box .socials > a i {
@@ -146,14 +145,13 @@ h2 {
 
 @media screen and (max-width: 960px) {
 
-    .body {
-        overflow-x: hidden;
-    }
 
     .about-content { 
-        padding: 0 2%;
-        padding-top: 5rem;
-        padding-bottom: 1rem; 
+    
+    }
+
+    .about-content .team-section  h2 {
+        font-size:1rem;
     }
 
     .about-content .container {
@@ -170,16 +168,22 @@ h2 {
         text-align: center;
     }
 
-    .about-content .container .box img {
-       display: none;
+    .about-content .container .box video {
+       margin-left: -2.5rem;
+    }
+
+    .about-content .team-section  {
+        height: 100%;
     }
 
         .about-content .team-section .team-container{
             flex-direction: column;
+            height: 100%;
         }
 
         .about-content .team-section .team-container .team-box {
             height: 100%;
+            margin-top: 3rem;
         }
 
 }

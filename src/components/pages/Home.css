@@ -1,13 +1,103 @@
-.client-section {
+.section {
+
+   overflow: hidden;
+}
+
+.section .home-container {
+    background:url('../images/background.jpg');
+    opacity: 1.6;
+    background-color: rgb(31, 31, 31);
+    object-fit: cover;
+  
+}
+
+.section .home-container h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.05rem;
+}
+.section .home-container .container {
+    display: flex;
+    align-items: flex-start;
+    height: 45vh;
+  
+    justify-content: flex-start;
+    
+    gap: 3rem;
+    padding: 0 7%;
+    
+
+}
+
+.section h2 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    letter-spacing:0.2rem;
+
+}
+
+.section .home-container .container .box {
+    transition: all 0.5s ease;
+    margin-top: 5rem;
+    border-radius: 30px;
+    width: 100%;
     align-items: center;
+    margin: auto;
+    
+    align-content: center;
+
     
 }
 
+.section .home-container .container .box h3 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2rem;
+    font-size:1.5rem;
+    opacity: 0.5;
+    font-weight: 500;   
+    transition: background-color 0.5s ease; 
+}
+
+.section .home-container .container .box p {
+    font-size:0.9rem;
+    font-weight: 300;
+    color: white;
+    
+   
+}
+
+.section .home-container .container .box :hover {
+    transition: all .9s ease;
+}
+
+.section .home-container .container .box i {
+    color: #6c89af;
+    text-align: center;
+    display: block;
+    font-size:2rem;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.section .home-container .container .box p:hover {
+    transition:  0.5s ease;
+}
+
+.client-section {
+    align-items: center; 
+    background-color: #fff;
+}
+
 .client-section > h2 {
-    margin: 3rem;
-    font-size: 2rem;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+    
     text-align: center;
     font-weight: 300;
+    letter-spacing:0.05rem;
 
 }
 
@@ -26,6 +116,7 @@
 .client-section .client-container .client-box {
     margin: 1rem;
     height: 200px;
+    margin-top: -2rem;
     width: 200px;
     align-items: center;
     justify-content: center;
@@ -46,13 +137,133 @@
     cursor: pointer;
 }
 
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 @media screen and (max-width: 960px) {
     .client-section{
         width: 100%;
     }
     .section {
-        padding: 0 3%;
-        padding-top: 7.5rem;
-        padding-bottom: 3rem;
+
+    }
+
+    .section .home-container .container {
+        flex-direction: column;
+        height: 130%;
+    }
+
+    .section .home-container .container .box {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+        height: 100%;
+        width: 100%;
     }
 }

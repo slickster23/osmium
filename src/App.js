@@ -13,6 +13,7 @@ function App() {
     <>
     <Router>
     <Navbar/>
+    <div className="div" style={{overflowX: 'hidden'}}>
     <Switch>
       <Route path = '/' exact component = {Home}></Route>
       <Route path = '/about' exact component = {About}></Route>
@@ -20,8 +21,11 @@ function App() {
       <Route path = '/blog' exact component = {Home}></Route>
       <Route path = '/gallery' exact component = {Gallery}></Route>
     </Switch>
+    </div>
     </Router>
+   
     <Footer/>
+    
     </>
 
   );

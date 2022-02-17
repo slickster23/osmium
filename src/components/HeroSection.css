@@ -1,13 +1,13 @@
 .hero-container {
     background: url('./images/bg.jpg') no-repeat;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
-   
+    margin-bottom: -3.1rem;
+    flex-direction: column; 
 }
 
 .hero-container .hero-content {
@@ -18,7 +18,9 @@
 .hero-container .hero-content > h2 {
     font-size: 3rem;
     text-align: center;
+    font-weight:300;
     color: white;
+    letter-spacing:0rem;
 }
 
 .hero-container .hero-content > p {
@@ -33,9 +35,10 @@
     display: block;  
     text-align: center;
     padding: 1rem;
-    background: #6c89af;
-    width: fit-content;
-    border-radius: 50px;
+    background: none;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    width: fit-content;;
 }
 .hero-container .hero-content .button > a {
     text-transform: uppercase;
@@ -52,14 +55,24 @@
 .hero-container .hero-content .button:hover,
 .hero-container .hero-content .button a:hover {
     background: rgb(248, 248, 248);
-    color: #6c89af;
-    transition: all .3s ease;
+    color: #fdfdfd;
+    transition: all .9s ease;
 }
 
 @media screen and (max-width: 960px) {
+
+    body {
+        overflow-x: hidden;
+    }
         .hero-container {
             width: 100%;
             height: 100%;
+            padding: 0 8%
+        }
+
+        .hero-container .hero-content > h2 {
+            font-size:2.4rem;
+            margin-bottom:1rem;
         }
 
         .hero-container .hero-content {
@@ -68,8 +81,10 @@
         }
 
         .hero-container .hero-content .button {
-            margin: 0 auto;
+            margin: auto;
             margin-top: 2rem;
+            margin-bottom: 8rem;
+
         }
 }
 
