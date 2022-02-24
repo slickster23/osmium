@@ -6,14 +6,18 @@ function About() {
     return (
         <>
 
-        <div className="body " style={{ overflowX: 'hidden' }}>
-
+        <div className="body ">
+       
         <div className="page-hero">
                 <h2>About Us</h2>
             </div>
-            
+
+           
+         
+
 
         <div className="about-content">
+        <video src="/gallery/lele.mp4" width="100%" height="100%" style = {{zIndex: "-1"}}loop autoplay muted controls></video>
             <div className="container">
                 <div className="box">
                     <h3>“Content is King, Content Marketing is Queen”</h3>
@@ -22,11 +26,6 @@ function About() {
                 <p>With more than six (6) years doing digital Marketing in Lesotho, our trusted team has developed the experience, credibility and skills to make sure your brand generates conversion, leads and awareness. </p>
                 </div>
 
-                <div className="box">
-                    <video width="600" height="300"controls>
-                        <source src="/gallery/lele.mp4" type="video/mp4"></source>
-                    </video>
-                </div>
             </div>
 
             <div className="team-section">

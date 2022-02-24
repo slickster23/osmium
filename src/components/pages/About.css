@@ -5,18 +5,21 @@ h2 {
     text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
-    color: #6c89af;
+    color: #5e88be;
     font-weight:700;
 }
 
-video {
-    object-fit: cover;
+.video { 
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-  }
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
 
 
 
@@ -26,6 +29,7 @@ video {
     justify-content: space-between;
     align-items: center;
     gap:3rem;
+    background: #fff;;
 }
 
 .about-content .container .box {
@@ -34,16 +38,12 @@ video {
 }
 
 .about-content .container .box h3 {
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
     color: #6c89af;
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
-.about-content .container .box video {
-    width: 600px !important;
-    height: 200% !important;
-}
 
 .about-content .container .box > i {
     font-size: 5rem;
@@ -53,9 +53,11 @@ video {
     margin-top: 1.5rem;
     font-weight: 300;
     line-height: 1.32rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    color:#4a4b4d;
     text-align: left;
-    padding: 0.4rem;
+    padding: 0.3rem;
+    letter-spacing: 0.03rem;
 }
 
 .about-content .team-section {
@@ -69,16 +71,19 @@ video {
 
 .about-content .team-section  h2 {
     margin-top: 4rem;
-    padding-top: 2rem;
-    font-size: 2.5rem;
-    font-weight: 300;
+    padding-top: 3rem;
+    font-size: 1rem;
+    font-weight: 500;   
+    letter-spacing:0.15rem;
+    color: white;;
     
 }
 
 .about-content .team-section > p {
     font-weight: 300;
-    margin-top: 1rem;
-    letter-spacing: 0.05rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02rem;
+    font-size: 0.85rem;
     color: white;
 }
 
@@ -98,8 +103,8 @@ video {
 }
 
 .about-content .team-section .team-container .team-box > img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 60%;
     object-fit: cover;
 }
@@ -111,10 +116,11 @@ video {
 }
 
 .about-content .team-section .team-container .team-box > p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin-top: 0.1rem;
     margin-bottom:0.3rem ;
+    letter-spacing: 0.03rem;
     color: white;
 }
 

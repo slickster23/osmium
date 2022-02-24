@@ -1,15 +1,12 @@
-.g-container {
-}
 
 .gallery-container {
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 2rem
+    margin: 0 auto;
 }
 
  .page-hero {
+    
     height: 20vh;
     background: url('../images/bg.jpg') no-repeat;
     display: flex;

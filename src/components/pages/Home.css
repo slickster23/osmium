@@ -1,21 +1,22 @@
-.section {
-
-   overflow: hidden;
-}
 
 .section .home-container {
     background:url('../images/background.jpg');
     opacity: 1.6;
     background-color: rgb(31, 31, 31);
     object-fit: cover;
+    align-items: center;
   
 }
 
 .section .home-container h2 {
+    text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
+   
+    width: 100%;
     color: #fff;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.0rem;
+    
 }
 .section .home-container .container {
     display: flex;
@@ -26,22 +27,28 @@
     
     gap: 3rem;
     padding: 0 7%;
-    
 
 }
 
 .section h2 {
     padding-top: 2rem;
     font-size: 1.5rem;
-    letter-spacing:0.2rem;
+    letter-spacing:0.1rem;
 
 }
 
+ .section .home-container  h2 { 
+
+    font-size:1rem;
+    letter-spacing:0.5rem;
+    font-weight: 400;
+}
+
 .section .home-container .container .box {
-    transition: all 0.5s ease;
     margin-top: 5rem;
-    border-radius: 30px;
-    width: 100%;
+
+    width: 350px;
+    height: 250px;
     align-items: center;
     margin: auto;
     
@@ -50,21 +57,45 @@
     
 }
 
+
+.section .home-container .container .box:hover>.text-box {
+   
+    visibility:visible;
+    opacity:1;
+}
+
+.section .home-container .container .box:hover>.text-box p {
+    transition: all .9s ease-in;
+}
+.section .home-container .container .box .text-box {
+   
+    display:block;
+    visibility:hidden;
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
 .section .home-container .container .box h3 {
     text-align: center;
     color: #ffffff;
     margin-top: 2rem;
-    font-size:1.5rem;
-    opacity: 0.5;
+    font-size:1rem;
+    opacity: 0.8;
     font-weight: 500;   
+    letter-spacing:0.15rem;
     transition: background-color 0.5s ease; 
 }
 
+
+
 .section .home-container .container .box p {
-    font-size:0.9rem;
+    font-size:0.8rem;
     font-weight: 300;
     color: white;
-    
+    text-align: left;
+    text-align: center;
+    letter-spacing: 0.02rem;
+    margin-top: -1.5rem;
    
 }
 
@@ -73,7 +104,7 @@
 }
 
 .section .home-container .container .box i {
-    color: #6c89af;
+    color: #70a6ec;
     text-align: center;
     display: block;
     font-size:2rem;
@@ -93,11 +124,12 @@
 
 .client-section > h2 {
     margin: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    text-transform: none;
     
     text-align: center;
     font-weight: 300;
-    letter-spacing:0.05rem;
+    letter-spacing:0.02rem;
 
 }
 
@@ -111,6 +143,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%
 }
 
 .client-section .client-container .client-box {
@@ -123,7 +156,6 @@
     gap: 0.5rem;
     border-radius: 50px;
 
-    overflow: hidden;
 }
 
 .client-section .client-container .client-box > img {
@@ -137,115 +169,8 @@
     cursor: pointer;
 }
 
-/* Slider */
-.slick-slide {
-    margin: 0px 20px;
-}
-.slick-slide img {
-    width: 100%;
-}
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
+
+
 
 @media screen and (max-width: 960px) {
     .client-section{
@@ -258,12 +183,29 @@
     .section .home-container .container {
         flex-direction: column;
         height: 130%;
+        
     }
+    
 
     .section .home-container .container .box {
         margin-top: 3rem;
-        margin-bottom: 0.5rem;
+       
         height: 100%;
         width: 100%;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
     }
-}
+
+    .client-section .client-container {
+        width: 100%;
+        
+    }
+        
+
+    .client-section .client-container .client-box {
+        width: 80%;
+        margin-bottom: 3rem;
+       
+    }
+
+    }

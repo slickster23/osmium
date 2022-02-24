@@ -23,7 +23,7 @@ function Navbar() {
         <nav className='navbar'>
             <div className='nav-container'>
                <Link to='/' className="navbar-logo">
-                   <img src="logos/osmium logo.png" alt="" /></Link> 
+                   <img src="logos/osmium logo.png" alt="" /></Link>  
                <div className="menu-icon" onClick={handleClick}>
                <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                </div>
